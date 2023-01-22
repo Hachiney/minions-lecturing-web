@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kevin.html">Kevin</a></li>
+        <li><a href="stuart.html">Stuart</a></li>
+        <li><a href="bob.html">Bob</a></li>
+      </ul>
+    </div>
+
+    <div class="title">
+      <h1>Tadaaaa... I'm <span class="crimson">Bob</span>!</h1>
+    </div>
+
+    <div class="home-img">
+      <img id = "bob-img" src="https://www.tradeinn.com/f/13921/139213623/minions-hello-bob-large-piggy-bank.jpg" alt="">
+    </div>
+    
+    <div id="change" class="prof-change">
+      <input id='entry' class='input' type='text' placeholder='Enter image address'> <button id='submit' class='btn'>Change my Profile</button>";
+    </div>
+    
+    
+
+    <div class="footer">
+      <p>Ⓒ Copyright <span class="minions">minons</span></p>
+    </div>
+    
+
+    <script>
+      
+
+      
+      const target = document.getElementById("submit");
+      target.onclick = function() {
+        document.getElementById("bob-img").src = document.getElementById('entry').value;
+        document.getElementById('entry').value = ''; 
+      
+      }
+      
+    </script>
+
+
+
+  </body>
+</html>

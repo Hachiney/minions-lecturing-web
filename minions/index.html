@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Minions</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kevin.html">Kevin</a></li>
+        <li><a href="stuart.html">Stuart</a></li>
+        <li><a href="bob.html">Bob</a></li>
+        <li><img id="icon" src="https://www.freepnglogos.com/uploads/sun-png/sun-day-rays-sun-image-pixabay-35.png" alt=""></li>
+      </ul>
+      
+    </div>
+
+    <div class="title">
+      <h1>Welcome to the <span class="crimson">Minions</span> club!</h1>
+    </div>
+
+    <div class="home-img">
+      <img src="https://www.rbsdirect.com.br/imagesrc/17476322.jpg?w=700" alt="">
+    </div>
+
+
+    <div class="member-question">
+      <h2>Are you our member?</h2>
+      <h3>Register <span class="crimson">Now!</span></h3>
+    </div>
+
+    <div class="container">
+      <form class="" action="" method="post">
+        <input class="input" type="text" name="" value="" placeholder="Name">
+        <input class="input" type="text" name="" value="" placeholder="Email">
+        <input class="input" type="password" name="" value="" placeholder="Password">
+        <input class="input" type="password" name="" value="" placeholder="Confirm Password">
+        <button class="btn" type="submit" name="button">Register</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>Ⓒ Copyright <span class="minions">minons</span></p>
+    </div>
+
+    <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function() {
+        document.body.classList.toggle("light-mode");
+        if (document.body.classList.contains("light-mode")) {
+          icon.src = "https://www.pngmart.com/files/13/Crescent-Moon-PNG-Photo.png"
+        }
+        else {
+          icon.src = "https://www.freepnglogos.com/uploads/sun-png/sun-day-rays-sun-image-pixabay-35.png"
+        }
+      }
+
+
+
+    </script>
+
+  </body>
+</html>

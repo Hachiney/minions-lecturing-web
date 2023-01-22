@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="kevin" href="kevin.html">Kevin</a></li>
+        <li><a id="stuart" href="stuart.html">Stuart</a></li>
+        <li><a id="bob" href="bob.html">Bob</a></li>
+        <li>
+          <div class="dropdown">
+            <button id = "language" class="dropbtn">Language 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id = "eng" href="#">English</a>
+              <a id = "tig" href="#">ትግርኛ</a>
+            </div>
+        </li>
+      </ul>
+      
+      </div>
+    </div>
+
+    <div class="title">
+      <h1 id="header">Hello, I'm <span class="crimson">Kevin</span>!</h1>
+    </div>
+
+    <div class="home-img">
+      <img src="https://i.pinimg.com/originals/b8/76/6c/b8766cd53b5e1529712ed7e49365b7d4.jpg" alt="">
+    </div>
+
+    <div class="footer">
+      <p id="copyright">Ⓒ Copyright <span class="minions">minons</span></p>
+    </div>
+
+    <script>
+      const english = document.getElementById("eng");
+      const tigrinya = document.getElementById("tig");
+
+
+      // For English
+      english.onclick = function() {
+        document.getElementById("home").innerHTML = "Home";
+        document.getElementById("kevin").innerHTML = "Kevin";
+        document.getElementById("stuart").innerHTML = "Stuart";
+        document.getElementById("bob").innerHTML = "Bob";
+        document.getElementById("language").innerHTML = "Language <i class='fa fa-caret-down'></i>";
+        document.getElementById("header").innerHTML = "Hello, I'm <span class='crimson'>Kevin</span>!";
+        document.getElementById("copyright").innerHTML = "Ⓒ Copyright <span class='minions'>minons</span>";
+
+      }
+
+
+      // For Tigrinya
+      tigrinya.onclick = function() {
+        document.getElementById("home").innerHTML = "ቤት";
+        document.getElementById("kevin").innerHTML = "ኬቨን";
+        document.getElementById("stuart").innerHTML = "ስቱዋርት";
+        document.getElementById("bob").innerHTML = "ቦብ";
+        document.getElementById("language").innerHTML = "ቋንቋ <i class='fa fa-caret-down'></i>";
+        document.getElementById("header").innerHTML = "ሰላማት፣ <span class='crimson'>ኬቨን</span> ይበሃል!";
+        document.getElementById("copyright").innerHTML = "Ⓒ መሰል ደራሲ ዝተሓለወ እዩ <span class='minions'>ሚንዮንስ</span>";
+
+      }
+            
+
+      
+
+
+    </script>
+
+
+
+  </body>
+</html>
